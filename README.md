@@ -24,6 +24,6 @@ npm run render
 
 ## The idea behind the example
 
-`react-sketchapp` makes it simple to compose components and see how they perform with real data.
+[react-sketchapp](https://github.com/airbnb/react-sketchapp) makes it simple to compose components and see how they perform with real data.
 
 ![examples-profile-cards](/assets/sketch.png)
