@@ -5,7 +5,7 @@
 Clone this repo
 
 ```bash
-git clone git@github.com:javascriptmid/event-design.git
+git clone git@github.com:javascriptmid/profile-cards.git
 ```
 
 Install the dependencies
@@ -26,4 +26,4 @@ npm run render
 
 `react-sketchapp` makes it simple to compose components and see how they perform with real data.
 
-![examples-profile-cards](https://cloud.githubusercontent.com/assets/591643/24778173/0dd7c03c-1ade-11e7-8bad-1ad51fe1033e.png)
+![examples-profile-cards](/assets/sketch.png)

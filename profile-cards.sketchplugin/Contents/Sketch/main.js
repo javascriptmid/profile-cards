@@ -87155,7 +87155,7 @@ object-assign
                   null,
                   _react2['default'].createElement(_reactSketchapp.Image, {
                     style: styles.MiniLogo,
-                    source: props.image
+                    source: __webpack_require__(217)
                   })
                 ),
                 _react2['default'].createElement(
@@ -87216,6 +87216,18 @@ object-assign
             }
           );
         }
+
+        /***/
+      },
+      /* 217 */
+      /***/ function(module, exports) {
+        module.exports =
+          'file://' +
+          context.plugin
+            .urlForResourceNamed(
+              '_webpack_resources/7acd0fa2814168dab183a0c075bc4ed2.png'
+            )
+            .path();
 
         /***/
       }

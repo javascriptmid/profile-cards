@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, View, Text, StyleSheet } from 'react-sketchapp';
 
-import { ThemeConsumer } from './ThemeProvider'
+import { ThemeConsumer } from './ThemeProvider';
 
 const styles = StyleSheet.create({
   Card: {
@@ -41,17 +41,38 @@ export default function Card(props) {
       {theme => (
         <View style={[styles.Card, { backgroundColor: theme.colors.Darker }]}>
           <View>
-            <Image style={styles.MiniLogo} source={props.image} />
+            <Image
+              style={styles.MiniLogo}
+              source={require('../images/logo.png')}
+            />
           </View>
           <View style={styles.CardContent}>
             <Image style={styles.Avatar} source={props.image} />
-            <Text style={[styles.Title, theme.fonts.Title, { color: theme.colors.Yellow }]}>{props.title}</Text>
-            <Text style={[theme.fonts.Subtitles, { color: theme.colors.Lighter }]}>{props.name}</Text>
+            <Text
+              style={[
+                styles.Title,
+                theme.fonts.Title,
+                { color: theme.colors.Yellow }
+              ]}
+            >
+              {props.title}
+            </Text>
+            <Text
+              style={[theme.fonts.Subtitles, { color: theme.colors.Lighter }]}
+            >
+              {props.name}
+            </Text>
           </View>
           <View style={styles.InfoRow}>
-            <Text style={[theme.fonts.Text, { color: theme.colors.Light }]}>XX Enero</Text>
-            <Text style={[theme.fonts.Text, { color: theme.colors.Light }]}>18:30 Hrs</Text>
-            <Text style={[theme.fonts.Text, { color: theme.colors.Light }]}>UrbanHub</Text>
+            <Text style={[theme.fonts.Text, { color: theme.colors.Light }]}>
+              XX Enero
+            </Text>
+            <Text style={[theme.fonts.Text, { color: theme.colors.Light }]}>
+              18:30 Hrs
+            </Text>
+            <Text style={[theme.fonts.Text, { color: theme.colors.Light }]}>
+              UrbanHub
+            </Text>
           </View>
         </View>
       )}
