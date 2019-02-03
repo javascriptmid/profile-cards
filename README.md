@@ -2,11 +2,10 @@
 
 ## How to use
 
-Download the example or [clone the repo](http://github.com/airbnb/react-sketchapp):
+Clone this repo
 
 ```bash
-curl https://codeload.github.com/airbnb/react-sketchapp/tar.gz/master | tar -xz --strip=2 react-sketchapp-master/examples/profile-cards
-cd profile-cards
+git clone git@github.com:javascriptmid/event-design.git
 ```
 
 Install the dependencies

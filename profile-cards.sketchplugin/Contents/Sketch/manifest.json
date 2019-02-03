@@ -10,13 +10,11 @@
   ],
   "menu": {
     "isRoot": true,
-    "items": [
-      "main"
-    ]
+    "items": ["main"]
   },
   "name": "profile-cards",
   "disableCocoaScriptPreprocessor": true,
   "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
-  "author": "Jon Gold",
-  "authorEmail": "jon.gold@airbnb.com"
+  "author": "Jerome Olvera",
+  "authorEmail": "jerome.olvera@gmail.com`"
 }
