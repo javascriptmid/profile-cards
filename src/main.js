@@ -1,5 +1,7 @@
 import React from 'react';
 import { render, Artboard, Text, View } from 'react-sketchapp';
+
+import ThemeProvider from './components/ThemeProvider';
 import Card from './components/Card';
 
 const Page = ({ talks }) => (
@@ -11,14 +13,20 @@ const Page = ({ talks }) => (
 );
 
 export default () => {
-  const Talks = [
+  const TALKS = [
     {
-      name: 'Herel Odin',
-      title: 'Api rest con JS',
+      name: 'Name Persona',
+      title: 'Card Title Talk',
       image:
         'https://pbs.twimg.com/profile_images/763033229993574400/6frGyDyA_400x400.jpg'
     }
   ];
 
-  render(<Page talks={Talks} />, context.document.currentPage());
+  const App = props => (
+    <ThemeProvider>
+      <Page talks={props.data} />
+    </ThemeProvider>
+  );
+
+  render(<App data={TALKS} />, context.document.currentPage());
 };
