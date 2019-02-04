@@ -5,29 +5,27 @@ import { ThemeConsumer } from './ThemeProvider';
 
 const styles = StyleSheet.create({
   Card: {
-    padding: 94,
+    padding: 64,
     height: 800,
-    width: 800,
-    alignItems: 'stretch',
-    justifyContent: 'space-between'
+    width: 800
   },
   CardContent: {
-    padding: 20,
-    alignItems: 'center',
-    justifyContent: 'center'
+    flex: 1,
+    padding: 64,
+    alignItems: 'center'
   },
   MiniLogo: {
     height: 48,
     width: 48
   },
   Avatar: {
+    marginBottom: 64,
     height: 256,
     width: 256,
-    objectFit: 'contain',
-    marginBottom: 48
+    objectFit: 'contain'
   },
-  Title: {
-    marginBottom: 18
+  TextCenter: {
+    textAlign: 'center'
   },
   InfoRow: {
     flexDirection: 'row',
@@ -47,10 +45,13 @@ export default function Card(props) {
             />
           </View>
           <View style={styles.CardContent}>
-            <Image style={styles.Avatar} source={props.image} />
+            <Image
+              style={styles.Avatar}
+              source={require('../images/logo.png')}
+            />
             <Text
               style={[
-                styles.Title,
+                styles.TextCenter,
                 theme.fonts.Title,
                 { color: theme.colors.Yellow }
               ]}
@@ -58,20 +59,25 @@ export default function Card(props) {
               {props.title}
             </Text>
             <Text
-              style={[theme.fonts.Subtitles, { color: theme.colors.Lighter }]}
+              style={[
+                theme.fonts.Subtitles,
+                styles.TextCenter,
+                { color: theme.colors.Lighter }
+              ]}
             >
               {props.name}
             </Text>
           </View>
           <View style={styles.InfoRow}>
             <Text style={[theme.fonts.Text, { color: theme.colors.Light }]}>
-              XX Enero
+              {props.date}
             </Text>
             <Text style={[theme.fonts.Text, { color: theme.colors.Light }]}>
-              18:30 Hrs
+              {props.time}
+              Hrs
             </Text>
             <Text style={[theme.fonts.Text, { color: theme.colors.Light }]}>
-              UrbanHub
+              {props.place}
             </Text>
           </View>
         </View>

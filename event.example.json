@@ -1,0 +1,24 @@
+{
+  "event": {
+    "date": "30 Enero",
+    "time": "16:30",
+    "place": "UrbanHub"
+  },
+  "speakers": [
+    {
+      "name": "Persona 1",
+      "title": "Talk 1",
+      "image": "/tmp/sketch.png"
+    },
+    {
+      "name": "Persona 2",
+      "title": "Talk 2",
+      "image": "/tmp/sketch.png"
+    },
+    {
+      "name": "Persona 3",
+      "title": "Talk 3",
+      "image": "/tmp/sketch.png"
+    }
+  ]
+}

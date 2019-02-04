@@ -1,32 +1,40 @@
 import React from 'react';
-import { render, Artboard, Text, View } from 'react-sketchapp';
+import { render, Document, Artboard, Page } from 'react-sketchapp';
 
 import ThemeProvider from './components/ThemeProvider';
 import Card from './components/Card';
 
-const Page = ({ talks }) => (
-  <Artboard>
-    {talks.map(talk => (
-      <Card title={talk.title} name={talk.name} image={talk.image} />
-    ))}
-  </Artboard>
-);
+import event from '../event.json';
 
-export default () => {
-  const TALKS = [
-    {
-      name: 'Name Persona',
-      title: 'Card Title Talk',
-      image:
-        'https://pbs.twimg.com/profile_images/763033229993574400/6frGyDyA_400x400.jpg'
-    }
-  ];
+function CardPage(props) {
+  return (
+    <Page style={{ flexDirection: 'row' }}>
+      {props.talks.map(talk => (
+        <Artboard style={{ marginHorizontal: 20 }}>
+          <Card
+            date={props.eventInfo.date}
+            time={props.eventInfo.time}
+            place={props.eventInfo.place}
+            title={talk.title}
+            name={talk.name}
+            image={talk.image}
+          />
+        </Artboard>
+      ))}
+    </Page>
+  );
+}
 
-  const App = props => (
+function MDocument(props) {
+  return (
     <ThemeProvider>
-      <Page talks={props.data} />
+      <Document>
+        <CardPage eventInfo={props.data.info} talks={props.data.speakers} />
+      </Document>
     </ThemeProvider>
   );
+}
 
-  render(<App data={TALKS} />, context.document.currentPage());
+export default () => {
+  render(<MDocument data={event} />);
 };
