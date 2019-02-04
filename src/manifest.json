@@ -10,8 +10,6 @@
   ],
   "menu": {
     "isRoot": true,
-    "items": [
-      "main"
-    ]
+    "items": ["main"]
   }
 }

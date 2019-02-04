@@ -9,7 +9,10 @@
     "watch": "skpm-build --watch",
     "render": "skpm-build --watch --run",
     "render:once": "skpm-build --run",
-    "postinstall": "npm run build && skpm-link"
+    "postinstall": "npm run build && skpm-link",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "format": "prettier src/**/*.js src/**/*.json --write"
   },
   "author": "Jerome Olvera <jerome.olvera@gmail.com`>",
   "license": "MIT",
@@ -24,8 +27,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write",
+    "*.{js,jsx,json,css,scss,md}": [
+      "yarn format",
       "git add"
     ]
   },
