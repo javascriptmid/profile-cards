@@ -10,7 +10,9 @@
   ],
   "menu": {
     "isRoot": true,
-    "items": ["main"]
+    "items": [
+      "main"
+    ]
   },
   "name": "profile-cards",
   "disableCocoaScriptPreprocessor": true,

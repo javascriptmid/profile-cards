@@ -2,6 +2,7 @@ import React from 'react';
 import { render, Document, Artboard, Page } from 'react-sketchapp';
 
 import ThemeProvider from './components/ThemeProvider';
+import CardEventResume from './components/CardEventResume';
 import Card from './components/Card';
 
 import event from '../event.json';
@@ -21,6 +22,15 @@ function CardPage(props) {
           />
         </Artboard>
       ))}
+
+      <Artboard>
+        <CardEventResume
+          date={props.eventInfo.date}
+          time={props.eventInfo.time}
+          place={props.eventInfo.place}
+          talks={props.talks}
+        />
+      </Artboard>
     </Page>
   );
 }
