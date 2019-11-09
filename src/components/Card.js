@@ -9,17 +9,17 @@ const styles = StyleSheet.create({
   CardContent: {
     flex: 1,
     padding: 64,
-    alignItems: 'center'
+    alignItems: 'center',
   },
   Avatar: {
     marginBottom: 64,
     height: 256,
     width: 256,
-    objectFit: 'contain'
+    objectFit: 'contain',
   },
   TextCenter: {
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 });
 
 function CardText(props) {

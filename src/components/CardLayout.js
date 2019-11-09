@@ -8,17 +8,17 @@ const styles = StyleSheet.create({
   Card: {
     padding: 64,
     height: 800,
-    width: 800
+    width: 800,
   },
   MiniLogo: {
     height: 48,
-    width: 48
+    width: 48,
   },
   InfoRow: {
     height: 48,
     flexDirection: 'row',
-    justifyContent: 'space-between'
-  }
+    justifyContent: 'space-between',
+  },
 });
 
 function CardText(props) {

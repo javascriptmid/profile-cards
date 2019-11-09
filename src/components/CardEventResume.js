@@ -9,19 +9,19 @@ const styles = StyleSheet.create({
   TalkList: {
     flex: 1,
     padding: 128,
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   TalkItem: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginVertical: 32
+    marginVertical: 32,
   },
   Avatar: {
     height: 80,
     width: 80,
     objectFit: 'contain',
-    marginRight: 24
-  }
+    marginRight: 24,
+  },
 });
 
 function TalkItem(props) {
