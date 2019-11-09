@@ -1,9 +1,4 @@
 {
-  "extends": ["airbnb", "plugin:prettier/recommended"],
-  "rules": {
-    "react/jsx-filename-extension": "off",
-    "react/prop-types": "off",
-    "react/destructuring-assignment": "off",
-    "global-require": "off"
-  }
+  "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+  "plugins": ["jsx-a11y"]
 }
